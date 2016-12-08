@@ -25,7 +25,14 @@ function loadData() {
             });
 
             var waveHeightElement = document.getElementById('wave-height');
+            var wavePeriodElement = document.getElementById('wave-period');
+            var avgWindSpeedElement = document.getElementById('avg-wind-speed');
+            var gustSpeedElement = document.getElementById('gust-speed');
+
             waveHeightElement.textContent = finnis.WaveHeight;
+            wavePeriodElement.textContent = finnis.WavePeriod;
+            avgWindSpeedElement.textContent = finnis.AverageWindSpeed;
+            gustSpeedElement.textContent = finnis.GustSpeed;
         } else {
             console.error("Unable to load data. The response code was: " + request.status);
         }
