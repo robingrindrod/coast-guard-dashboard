@@ -29,10 +29,10 @@ function loadData() {
             var avgWindSpeedElement = document.getElementById('avg-wind-speed');
             var gustSpeedElement = document.getElementById('gust-speed');
 
-            waveHeightElement.textContent = finnis.WaveHeight;
-            wavePeriodElement.textContent = finnis.WavePeriod;
-            avgWindSpeedElement.textContent = finnis.AverageWindSpeed;
-            gustSpeedElement.textContent = finnis.GustSpeed;
+            waveHeightElement.textContent = finnis.WaveHeight + ' m';
+            wavePeriodElement.textContent = finnis.WavePeriod + ' s';
+            avgWindSpeedElement.textContent = finnis.AverageWindSpeed + ' kts';
+            gustSpeedElement.textContent = finnis.GustSpeed + ' kts';
         } else {
             console.error("Unable to load data. The response code was: " + request.status);
         }
